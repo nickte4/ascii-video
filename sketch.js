@@ -1,21 +1,14 @@
-const density = "Ñ@#W$9876543210?!abc;:+=-,._       ";
+const density = "Ñ@#W$9876543210?!abc;:+=-,._                 ";
 
-// let picture;
 let video;
 let asciiDiv;
-
-// function preload() {
-//   picture = loadImage("./images/small-dog.jpg");
-// }
 
 function setup() {
   noCanvas();
   video = createCapture(VIDEO);
+  // ADJUST FOR VIDEO SIZE: video.size()
   video.size(48, 48);
   asciiDiv = createDiv();
-
-  //background(0);
-  // image(picture, 0, 0, width, height);
 }
 function draw() {
   video.loadPixels();
@@ -36,7 +29,6 @@ function draw() {
       else asciiImage += c;
     }
     asciiImage += "<br/>";
-    // createDiv(row);
   }
   asciiDiv.html(asciiImage);
 }
