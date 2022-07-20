@@ -7,7 +7,7 @@ function setup() {
   noCanvas();
   video = createCapture(VIDEO);
   // ADJUST FOR VIDEO SIZE: video.size()
-  video.size(48, 48);
+  video.size(64, 48);
   asciiDiv = createDiv();
 }
 function draw() {
