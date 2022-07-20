@@ -27,10 +27,15 @@ function draw() {
       const avg = (r + g + b) / 3;
 
       noStroke();
-      fill(avg);
+      fill(255);
       // square(i * w, j * h, w);
+
+      const len = density.length;
+      const charIndex = floor(map(avg, 0, 255, len, 0));
+
       textSize(w);
-      text("G", i * w, j * h);
+      textAlign(CENTER, CENTER);
+      text(density.charAt(charIndex), i * w, j * h);
     }
   }
 }
