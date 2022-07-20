@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background(0);
   // image(picture, 0, 0, width, height);
 
   let w = width / picture.width;
