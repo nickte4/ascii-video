@@ -1,4 +1,5 @@
-const density = "Ñ@#W$9876543210?!abc;:+=-,._                 ";
+const density = "Ñ@#W$9876543210?!abc;:+=-,._   ";
+// const density = "   _.,-=+:;cba!?0123456789$W#@Ñ";
 
 let video;
 let asciiDiv;
