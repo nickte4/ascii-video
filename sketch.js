@@ -9,6 +9,7 @@ function setup() {
   video = createCapture(VIDEO);
   // ADJUST FOR VIDEO SIZE: video.size()
   video.size(120, 60);
+  video.hide();
   asciiDiv = createDiv();
 }
 function draw() {
